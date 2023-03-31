@@ -7,8 +7,8 @@ export default function decorate(block) {
     const li = document.createElement('li');
     li.innerHTML = row.innerHTML;
     [...li.children].forEach((div) => {
-      if (div.children.length === 1 && div.querySelector('picture')) div.className = 'cardsnew-card-image';
-      else div.className = 'cardsnew-card-body';
+      if (div.children.length === 1 && div.querySelector('picture')) div.className = 'cards-new-card-image';
+      else div.className = 'cards-new-card-body';
     });
     ul.append(li);
   });
